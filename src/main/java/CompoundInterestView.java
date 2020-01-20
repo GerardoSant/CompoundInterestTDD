@@ -1,15 +1,13 @@
 import java.util.Scanner;
 
-import static java.lang.Double.parseDouble;
-
-public class HowMuchMoneyCanIMakeView {
+public class CompoundInterestView {
     private static Scanner inputScanner = new Scanner (System.in);
 
     /*public static void main(String[] args) {
         start();
     }*/
     public static void start(){
-        System.out.print("Tu capital será: "+ HowMuchMoneyCanIMake.calculate(getUserInitialCapital(),getUserAnnualAddition(),
+        System.out.print("Tu capital será: "+ CompoundInterest.calculate(getUserInitialCapital(),getUserAnnualAddition(),
                 getUserInterestRate(), getUserYearsToGrow()));
     }
 

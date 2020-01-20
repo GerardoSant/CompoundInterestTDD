@@ -5,14 +5,14 @@ import org.junit.runners.Parameterized;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(org.junit.runners.Parameterized.class)
-public class HowMuchMoneyCanIMake_ {
+public class CompoundInterest_ {
     private int initialCapital;
     private int annualAddition;
     private double interestRate;
     private int yearsToGrow;
     private int finalcapital;
 
-    public HowMuchMoneyCanIMake_(int initialCapital, int annualAddition, double interestRate, int yearsToGrow, int finalcapital) {
+    public CompoundInterest_(int initialCapital, int annualAddition, double interestRate, int yearsToGrow, int finalcapital) {
         this.initialCapital = initialCapital;
         this.annualAddition = annualAddition;
         this.interestRate = interestRate;
@@ -22,7 +22,7 @@ public class HowMuchMoneyCanIMake_ {
 
     @Test
     public void execute(){
-        assertThat(HowMuchMoneyCanIMake.calculate(initialCapital,annualAddition,interestRate,yearsToGrow))
+        assertThat(CompoundInterest.calculate(initialCapital,annualAddition,interestRate,yearsToGrow))
                 .isEqualTo(finalcapital);
     }
 
@@ -43,8 +43,6 @@ public class HowMuchMoneyCanIMake_ {
                 {100,1000,10,5,6266},
                 {100,1000,15,10,20708},
                 {1000,1000,15,10,24349},
-
-
         };
     }
 
