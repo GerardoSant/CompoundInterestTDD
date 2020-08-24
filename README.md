@@ -5,3 +5,14 @@ The aim of this kata is to calculate the money that you can make thanks to the c
      that you will have by having this capital saved, calculating and adding the interest over this capital every year and adding the anual addition,
      for the number of years that you have specified.
      
+     
+## Installing/Running
+
+Only need to be cloned and executed.
+
+## Built With
+
+* [Java](https://www.java.com/es/) - Programming language
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [JUnit](https://junit.org/junit5/) - GUI widget toolkit for Java 
+* [TDD](https://en.wikipedia.org/wiki/Test-driven_development) - Test-driven development process.
